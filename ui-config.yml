@@ -1,0 +1,12 @@
+---
+antora:
+  name: modules
+  dir: www
+  modules:
+    - name: "01-epel-intro"
+      label: "Epel Intro"
+      solveButton: true
+
+tabs:
+  - name: ">_ terminal"
+    url: /wetty
