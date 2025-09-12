@@ -1,0 +1,35 @@
+= Install Conda
+
+You have now successfully enabled Extra Packages for Enterprise Linux.
+You can verify your installation by running the following command:
+
+[source,bash,run]
+----
+dnf repolist
+----
+
+After running this command, you will be presented with a list of enabled
+software repositories. One of the lines should contain `+epel+` or
+`+Extra Packages for Enterprise Linux 10 - x86-64+`.
+
+Now that you have confirmed the EPEL installation, try installing Conda:
+
+[source,bash,run]
+----
+dnf install -y conda
+----
+
+This time, the last line of output should say `+Complete!+` indicating
+that you have successfully installed Conda.
+
+To verify that Conda is installed and working properly, run this command
+to view the version of Conda that is installed on your system
+
+[source,bash,run]
+----
+conda -V
+----
+
+The output of this command should look like `+conda 4.14.0+`. The exact
+number may change as new versions of Conda are released, but it will
+remain in this format.
