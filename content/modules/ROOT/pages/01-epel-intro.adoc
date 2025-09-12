@@ -8,7 +8,7 @@ curated such that none of the packages in EPEL should conflict with
 anything that ships with RHEL, meaning that EPEL enables greater
 flexibility for users while maximizing compatibility with RHEL.
 
-NOTE:If you choose to use the RHEL web console at any point during
+NOTE: If you choose to use the RHEL web console at any point during
 this lab, you can log in using the following credentials: - Username:
 rhel - Password: redhat
 
