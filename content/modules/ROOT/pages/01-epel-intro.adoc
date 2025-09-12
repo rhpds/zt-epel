@@ -1,3 +1,5 @@
+= Extra Packages for Enterprise Linux (EPEL)
+
 In this lab, you will learn about
 https://docs.fedoraproject.org/en-US/epel/[Extra Packages for Enterprise
 Linux (EPEL)], a repository of packages designed to increase the

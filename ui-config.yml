@@ -5,8 +5,8 @@ antora:
   modules:
     - name: "01-epel-intro"
       label: "Epel Intro"
-      solveButton: true
+      solveButton: false
 
 tabs:
   - name: ">_ terminal"
-    url: /wetty
+    url: /wetty_rhel/ssh/root
