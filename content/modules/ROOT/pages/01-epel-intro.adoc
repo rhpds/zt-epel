@@ -8,11 +8,9 @@ curated such that none of the packages in EPEL should conflict with
 anything that ships with RHEL, meaning that EPEL enables greater
 flexibility for users while maximizing compatibility with RHEL.
 
-____
-*Note:* If you choose to use the RHEL web console at any point during
+NOTE:If you choose to use the RHEL web console at any point during
 this lab, you can log in using the following credentials: - Username:
 rhel - Password: redhat
-____
 
 Suppose that you wish to use Conda for programming. In this lab, we will
 install Conda, but you can install any package from EPEL with the same
@@ -22,7 +20,7 @@ command.
 First, let’s try to install Conda without enabling EPEL. To do this, run
 the following command:
 
-[source,bash]
+[source,bash,run]
 ----
 dnf install -y conda
 ----
@@ -33,7 +31,7 @@ you will see an output that resembles this:
 
 We can fix this problem by enabling EPEL with the following command:
 
-[source,bash]
+[source,bash,run]
 ----
 subscription-manager repos --enable codeready-builder-for-rhel-9-$(arch)-rpms
 dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
@@ -44,7 +42,7 @@ The output will look like this:
 You have now successfully enabled Extra Packages for Enterprise Linux.
 You can verify your installation by running the following command:
 
-[source,bash]
+[source,bash,run]
 ----
 dnf repolist
 ----
@@ -55,7 +53,7 @@ software repositories. One of the lines should contain `+epel+` or
 
 Now that you have confirmed the EPEL installation, try installing Conda:
 
-[source,bash]
+[source,bash,run]
 ----
 dnf install -y conda
 ----
@@ -66,7 +64,7 @@ that you have successfully installed Conda.
 To verify that Conda is installed and working properly, run this command
 to view the version of Conda that is installed on your system
 
-[source,bash]
+[source,bash,run]
 ----
 conda -V
 ----
