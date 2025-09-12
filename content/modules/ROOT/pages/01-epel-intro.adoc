@@ -1,6 +1,6 @@
 :imagesdir: ../assets/images
 
-= Extra Packages for Enterprise Linux (EPEL)
+== Extra Packages for Enterprise Linux (EPEL)
 
 In this lab, you will learn about
 https://docs.fedoraproject.org/en-US/epel/[Extra Packages for Enterprise
@@ -32,7 +32,7 @@ The installation will not be successful because your package manager
 you will see an output that resembles this:
 
 .BusyBox installation output
-image::busybox_not_found.png[width=100%]
+image::busybox_not_found.png[busybox_not_found]
 
 We can fix this problem by enabling EPEL with the following command:
 

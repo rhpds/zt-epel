@@ -1,4 +1,6 @@
-= Install busybox
+:imagesdir: ../assets/images
+
+== Install busybox
 
 You have now successfully enabled Extra Packages for Enterprise Linux.
 You can verify your installation by running the following command:
@@ -7,6 +9,9 @@ You can verify your installation by running the following command:
 ----
 dnf repolist
 ----
+
+.Repositories list
+image::dnf_repolist.png[dnf_repolist]
 
 After running this command, you will be presented with a list of enabled
 software repositories. One of the lines should contain `+epel+` or
@@ -27,9 +32,10 @@ to view the version of busybox that is installed on your system
 
 [source,bash,run]
 ----
-busybox -V
+busybox
 ----
 
-The output of this command should look like `+busybox 4.14.0+`. The exact
-number may change as new versions of busybox are released, but it will
-remain in this format.
+You will see the following output.
+
+.Busybox output
+image::busybox_output.png[busybox_output]
