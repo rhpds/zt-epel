@@ -14,25 +14,25 @@ NOTE: If you choose to use the RHEL web console at any point during
 this lab, you can log in using the following credentials: - Username:
 rhel - Password: redhat
 
-Suppose that you wish to use Conda for programming. In this lab, we will
-install Conda, but you can install any package from EPEL with the same
+Suppose that you wish to use BusyBox for system administration. In this lab, we will
+install BusyBox, but you can install any package from EPEL with the same
 steps by changing the name of the package in your `+dnf install+`
 command.
 
-First, let’s try to install Conda without enabling EPEL. To do this, run
+First, let’s try to install BusyBox without enabling EPEL. To do this, run
 the following command:
 
 [source,bash,run]
 ----
-dnf install -y conda
+dnf install -y busybox
 ----
 
 The installation will not be successful because your package manager
-(dnf) does not have access to a repository containing Conda. As such,
+(dnf) does not have access to a repository containing BusyBox. As such,
 you will see an output that resembles this:
 
-.Conda installation output
-image::conda_not_found.png[width=100%]
+.BusyBox installation output
+image::busybox_not_found.png[width=100%]
 
 We can fix this problem by enabling EPEL with the following command:
 

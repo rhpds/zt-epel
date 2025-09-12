@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Starting module called 02-install-conda" >> /tmp/progress.log
+echo "Starting module called 02-install-software" >> /tmp/progress.log
 
 sed -e '/^metalink=https:\/\/mirrors.fedoraproject.org\/metalink/ s/^/#/' \
     -e '/^#baseurl=http:/ s/http/https/' \
