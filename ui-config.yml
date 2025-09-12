@@ -6,6 +6,9 @@ antora:
     - name: "01-epel-intro"
       label: "Epel Intro"
       solveButton: false
+    - name: "02-install-conda"
+      label: "Install conda"
+      solveButton: false
 
 tabs:
   - name: ">_ terminal"

@@ -31,6 +31,9 @@ The installation will not be successful because your package manager
 (dnf) does not have access to a repository containing Conda. As such,
 you will see an output that resembles this:
 
+.Conda installation output
+image::conda_not_found.png[width=100%]
+
 We can fix this problem by enabling EPEL with the following command:
 
 [source,bash,run]
