@@ -24,6 +24,9 @@ Now that you have confirmed the EPEL installation, try installing busybox:
 dnf install -y busybox
 ----
 
+.Busybox installation output
+image::busybox_install_output.png[busybox_install_output]
+
 This time, the last line of output should say `+Complete!+` indicating
 that you have successfully installed busybox.
 
